@@ -9,4 +9,3 @@ proc grantPt*(fd : cint): cint {.importC: "grantpt".}
 proc unlockPt*(fd : cint): cint {.importC: "unlockpt".}
 proc fork*(toFork : void): cint {.importC: "fork".}
 proc dup2*(oldFd, newFd: cint): cint {.importC: "dup2".}
-proc execve*(pathname : cstring, argv,envp : seq[cstring]) : cint {.importC:"execve".}
