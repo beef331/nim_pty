@@ -7,4 +7,3 @@ proc ptsName*(fd : cint): cstring {.importC:"ptsname".}
 proc ptsNameR*(fd : cint, buffer : ptr cstring, bufLen : csize_t) : int{.importC:"ptsname_r".}
 proc grantPt*(fd : cint): cint {.importC: "grantpt".}
 proc unlockPt*(fd : cint): cint {.importC: "unlockpt".}
-proc dup2*(oldFd, newFd: cint): cint {.importC: "dup2".}
